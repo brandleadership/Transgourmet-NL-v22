@@ -1,0 +1,153 @@
+{% set element = element is defined ? element : 'single-product' %}
+{% if switched is defined and switched == true %}
+    {% set order = ['description', 'image'] %}
+{% else %}
+    {% set order = ['image', 'description'] %}
+{% endif %}
+{% set padding = ['0 8px 20px 0px', '0 0px 20px 8px'] %}
+<table   border="0"   cellpadding="0"
+    cellspacing="0"
+    width="100%"  data-bsi-element="{{ element }}"
+    data-bsi-element-part="product"><tr><td style="padding-bottom: 20px;">
+<table align="left"
+   
+    style="border: 1px solid #e5e5e5;"
+    bgcolor="#ffffff"
+    cellpadding="0"
+    cellspacing="0"
+    width="100%"
+    class="devicewidthinner"
+   >
+    {% for index, element in order %}
+        {% if element == 'image' %}
+            <tr>
+                <td colspan="3"
+                    align="center"
+                    class="devicewidthinner"
+                    valign="top"
+                    style="height:168px;">
+                    <a href=""
+                        target="_blank"
+                        style="outline: none;color: #000; text-decoration: underline; border: 0px;">
+                        <img alt="BSI"
+                            border="0"
+                            class="mobile-image-zweispalter"
+                            width="190"
+                            src="{{
+                            src
+                                ?
+                                : bsi_cx_asset(
+                                    '../../../../../resources/whitelabel/product-list-item1.png'
+                                )
+                            }}"
+                            style="display: block; width: 190px; height: 168px;margin-bottom: 20px" />
+                    </a>
+                </td>
+            </tr>
+        {% endif %}
+        {% if element == 'description' %}
+            <tr>
+                <td align="left" class="devicewidthinner" valign="top">
+                    <table align="left"
+                        bgcolor="#ffffff"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        class="devicewidthinner"
+                        style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td align="left"
+                                    class="devicewidthinner"
+                                    style="padding-top:20px;padding-left: 15px;font-weight:bold;">
+                                    <a class="fallback-font"
+                                        style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal; color: #000000; font-size: 16px;line-height:20px;margin: 0;outline: none;text-decoration: none;"
+                                        href=""
+                                        target="_blank"
+                                        data-bsi-product-group="1"
+                                        data-bsi-product-name="">
+                                        Quality Geschirspulmittel
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left"
+                                    class="devicewidthinner"
+                                    style="padding-bottom:20px;padding-left: 15px;">
+                                    <div data-bsi-product-description=""
+                                        data-bsi-product-group="{{
+                                        productIndex
+                                        }}"
+                                        class="fallback-font"
+                                        style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:400; font-style:normal; color: #000000; font-size: 14px;line-height:16px;margin: 0;">
+                                        ohne Chlor, 10l
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left"
+                                    class="devicewidthinner"
+                                    valign="top"
+                                    bgcolor="#ffffff"
+                                    style="height:88px;width:278px">
+                                    <span class="fallback-font"
+                                        data-bsi-product-group="1"
+                                        data-bsi-product-priceunit=""
+                                        style="margin-left:10px;margin-top:10px;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;font-size: 16px;text-align: left;line-height:20px;">
+                                        Kg
+                                    </span>
+                                    <div style="text-align:center">
+                                        <table border="0"
+                                            cellpadding="0"
+                                            cellspacing="0"
+                                            align="center">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" align="left">
+                                                        <span class="fallback-font"
+                                                            style="margin:0;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:bold; font-style:normal;color: #e20026;font-size: 58px;"
+                                                            data-bsi-product-group="1"
+                                                            data-bsi-product-remove-if-regular-price="">
+                                                            <span data-bsi-product-group="1"
+                                                                data-bsi-product-special-price-franken="">
+                                                                <span class="fallback-font"
+                                                                    style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;font-size: 32px;line-height: 37px;">
+                                                                    4
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </td>
+                                                    <td style="vertical-align: top; align="left" padding-top:0.4em">
+                                                        <span class="fallback-font"
+                                                            style="text-align: center;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:bold; font-style:normal;color: #e20026;font-size: 32px;vertical-align: top;"
+                                                            data-bsi-product-group="1"
+                                                            data-bsi-product-remove-if-regular-price="">
+                                                            <span data-bsi-product-group="1"
+                                                                data-bsi-product-special-price-rappen="">
+                                                                <sup class="fallback-font"
+                                                                    style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;line-height:20px;font-size: 16px;vertical-align: top;">
+                                                                    35
+                                                                </sup>
+                                                            </span>
+                                                        </span>
+                                                    </td>
+                                                 
+                                                  
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                              
+                            </tr>
+                          
+                        </tbody>
+                    </table>
+                </td>
+          
+            </tr>
+            
+        {% endif %}
+    {% endfor %}
+</table>
+</td></tr></table>

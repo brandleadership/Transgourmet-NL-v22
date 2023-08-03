@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>{{ properties.title }}</title>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-    {{ bsi_cx_css_inline() }}
-  </style>
-</head>
-<body>
+    <head>
+        <title>
+            {{ properties.title }}
+        </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            {{ bsi_cx_css_inline() }}
+        </style>
+        <style type="text/css">
+    {% include '../../templates/email/styles/general.scss' %}
+</style>
+        <!-- [if (gte mso 9)|(IE)]>
+ <style type="text/css">
+ table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ mso-table-lspace: 0pt !important;
+ mso-table-rspace: 0pt !important; }
+ </style>
+ <![endif] -->
+    </head>
+    <body>
+        <center class="wrapper">
+            <header data-bsi-dropzone="header" class="block-header mobile-full-width">
+                {% block header %}
 
-{# Be aware, that this is no valid email template. #}
+                {% endblock %}
+            </header>
 
-<main data-bsi-dropzone="a1683342-d4a7-4c26-924e-bce162c4399f">
-  {% block main %}{% endblock %}
-</main>
+            <main data-bsi-dropzone="main" class="block-wrapper mobile-full-width">
+                {% block main %}
 
-<footer>
-  Built for BSI CX {{ cx.version.TARGET.toString() }}
-</footer>
+                {% endblock %}
+            </main>
 
-</body>
+            <footer data-bsi-dropzone="footer" class="block-footer mobile-full-width">
+                {% block footer %}
+
+                {% endblock %}
+            </footer>
+        </center>
+        {# Be aware, that this is no valid email template. #}
+    </body>
 </html>

@@ -1,0 +1,175 @@
+$base_font_color: bsiProperty('styles.base_font_color');
+$background_site: bsiProperty('styles.background_site');
+$link_font_color: bsiProperty('styles.link_font_color');
+$footer_text_color: bsiProperty('$footer_text_color');
+
+:root {
+    --red: #e20026;
+    --black: #000000;
+    --grey-bg: #f4f4f4;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#outlook a {
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../../resources/fonts/trebuc.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Transgourmet';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Transgourmet-Bold'),
+        url('https://www.transgourmet.ch/themes/contrib/custom_theme/resources/assets/fonts/transgourmet/Transgourmet_W_Bd.woff')
+            format('woff');
+    mso-font-alt: 'Trebuchet MS', Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'Transgourmet';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Transgourmet-Light'),
+        url('https://www.transgourmet.ch/themes/contrib/custom_theme/resources/assets/fonts/transgourmet/Transgourmet_W_Lt.woff')
+            format('woff');
+    mso-font-alt: 'Trebuchet MS', Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'Transgourmet';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Transgourmet-Regular'),
+        url('https://www.transgourmet.ch/themes/contrib/custom_theme/resources/assets/fonts/transgourmet/Transgourmet_W_Rg.woff')
+            format('woff');
+    mso-font-alt: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+body {
+    color: $base_font_color;
+    background-color: $background_site;
+    font-family: 'Transgourmet', 'Trebuchet MS', 'sans-serif';
+    width: 100% !important;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+strong,
+b {
+    font-weight: bold !important;
+}
+p {
+    margin: 0;
+}
+img {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    -ms-interpolation-mode: bicubic;
+}
+a {
+    color: $link_font_color;
+    text-decoration: underline;
+    display: inline-block;
+}
+a img {
+    border: none;
+    display: block;
+}
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+table td {
+    border-collapse: collapse;
+}
+a[href^='tel'],
+a[href^='sms'] {
+    text-decoration: none;
+    color: $link_font_color !important;
+    pointer-events: auto;
+    cursor: pointer;
+}
+div[class='block-footer'] a,
+div[class='block-footer'] a[href^='tel'],
+div[class='block-footer'] a[href^='sms'] {
+    color: $footer_text_color;
+    text-decoration: none;
+}
+
+// div[class='block-wrapper'],
+// div[class='block-header'],
+// div[class='block-footer'] {
+//     max-width: 740px !important;
+//     margin: 0 auto !important;
+//     background-color: #f4f4f4;
+// }
+
+// .block-wrapper,
+// .block-header,
+// .block-footer {
+//     max-width: 740px !important;
+//     margin: 0 auto !important;
+//     background-color: #f4f4f4;
+// }
+
+table[class='hideforlarge'] {
+    display: none;
+}
+
+img[class='mobile-image-zweispalter'] {
+    width: 220px !important;
+    height: auto !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.bildtable {
+    padding-top: 10px !important;
+}
+
+table[class='product-border'] {
+    line-height: 1px;
+    width: 2px;
+    border-width: 1px;
+    background-color: #ffffff;
+    height: 235px;
+}
+
+.footer-links a[x-apple-data-detectors] {
+    color: #e20026 !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+.footer-links a {
+    color: #e20026 !important;
+}
+
+@media (max-width: 740px) {
+    .mobile-full-width {
+        width: 100% !important;
+    }
+}
