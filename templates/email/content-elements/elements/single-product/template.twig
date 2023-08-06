@@ -6,24 +6,23 @@
 {% endif %}
 {% set padding = ['0 8px 20px 0px', '0 0px 20px 8px'] %}
 <table   border="0"   cellpadding="0"
-    cellspacing="0"
+    cellspacing="0" class=" mobile-full-width"
     width="100%"  data-bsi-element="{{ element }}"
     data-bsi-element-part="product"><tr><td style="padding-bottom: 20px;">
 <table align="left"
-   
     style="border: 1px solid #e5e5e5;"
     bgcolor="#ffffff"
     cellpadding="0"
     cellspacing="0"
     width="100%"
-    class="devicewidthinner"
+   class="mobile-full-width"
    >
     {% for index, element in order %}
         {% if element == 'image' %}
             <tr>
                 <td colspan="3"
                     align="center"
-                    class="devicewidthinner"
+                    class="mobile-full-width"
                     valign="top"
                     style="height:168px;">
                     <a href=""
@@ -47,18 +46,18 @@
         {% endif %}
         {% if element == 'description' %}
             <tr>
-                <td align="left" class="devicewidthinner" valign="top">
+                <td align="left"  valign="top">
                     <table align="left"
                         bgcolor="#ffffff"
                         border="0"
                         cellpadding="0"
                         cellspacing="0"
-                        class="devicewidthinner"
+                        class="mobile-full-width"
                         style="width: 100%;">
                         <tbody>
                             <tr>
                                 <td align="left"
-                                    class="devicewidthinner"
+                                   
                                     style="padding-top:20px;padding-left: 15px;font-weight:bold;">
                                     <a class="fallback-font"
                                         style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal; color: #000000; font-size: 16px;line-height:20px;margin: 0;outline: none;text-decoration: none;"
@@ -72,7 +71,7 @@
                             </tr>
                             <tr>
                                 <td align="left"
-                                    class="devicewidthinner"
+                                   
                                     style="padding-bottom:20px;padding-left: 15px;">
                                     <div data-bsi-product-description=""
                                         data-bsi-product-group="{{
@@ -86,7 +85,7 @@
                             </tr>
                             <tr>
                                 <td align="left"
-                                    class="devicewidthinner"
+                                   
                                     valign="top"
                                     bgcolor="#ffffff"
                                     style="height:88px;width:278px">
@@ -100,7 +99,7 @@
                                         <table border="0"
                                             cellpadding="0"
                                             cellspacing="0"
-                                            align="center">
+                                            align="center" class=" mobile-full-width">
                                             <tbody>
                                                 <tr>
                                                     <td style="vertical-align: top;" align="left">
