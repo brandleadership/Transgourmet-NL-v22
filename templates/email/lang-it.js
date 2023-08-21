@@ -35,9 +35,11 @@ module.exports = {
             kundewerden:
                 '[Kundewerden|url=https://www.transgourmet.ch/it/aziendale/diventare-cliente]',
             impressum:
-                '[Impressum|url=https://www.transgourmet.ch/it/impressum]',
+                '[Impressum|url= https://www.transgourmet.ch/it/impressum]',
             datenschutz:
-                '[Datenschutz|url=https://www.transgourmet.ch/it/protezione-dei-dati]',
+                '[Datenschutz|url=https://www.transgourmet.ch/it/co/protezione-dei-dati]',
+            einstellungen_aktualisieren: '[Einstellungen aktualisieren]',
+            abmelden: '[Abmelden]',
             agb: '[AGB|url=https://www.transgourmet.ch/it/aziendale/cgc]',
             apple:
                 "bsi_cx_asset('../../../../../resources/whitelabel/apple-it.png')",

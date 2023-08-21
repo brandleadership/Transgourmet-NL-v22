@@ -1,4 +1,4 @@
-{% set element = element is defined ? element : 'single-product' %}
+{% set element = element is defined ? element : 'single-product-automated' %}
 {% if switched is defined and switched == true %}
     {% set order = ['description', 'image'] %}
 {% else %}
@@ -19,8 +19,8 @@
     width="100%"
    class="mobile-full-width"
    >
-     {% for index, element in order %}
-        {% if element == 'image' %} 
+    {% for index, element in order %}
+        {% if element == 'image' %}
             <tr>
                 <td colspan="3"
                     align="center"
@@ -43,8 +43,8 @@
                     </a>
                 </td>
             </tr>
-         {% endif %} 
-         {% if element == 'description' %} 
+        {% endif %} 
+         {% if element == 'description' %}
             <tr>
                 <td align="left"  valign="top">
                     <table align="left"
@@ -63,7 +63,7 @@
                                         target="_blank"
                                         data-bsi-product-group="1"
                                         data-bsi-product-name="">
-                                        Quality Geschirspulmittel
+                                        {Quality Geschirspulmittel}
                                     </a>
                                 </td>
                             </tr>
@@ -76,7 +76,7 @@
                                         }}"
                                     
                                         style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:400; font-style:normal; color: #000000; font-size: 14px;line-height:16px;margin: 0;">
-                                        ohne Chlor, 10l
+                                        {ohne Chlor, 10l}
                                     </div>
                                 </td>
                             </tr>
@@ -89,7 +89,7 @@
                                         data-bsi-product-group="1"
                                         data-bsi-product-priceunit=""
                                         style="margin-left:10px;margin-top:10px;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;font-size: 16px;text-align: left;line-height:20px;">
-                                        Kg
+                                        {Kg}
                                     </div>
                                     <div style="text-align:center">
                                         <table border="0"
@@ -105,7 +105,7 @@
                                                             <p data-bsi-product-group="1"
                                                                 data-bsi-product-special-price-franken="">
                                                                 <p style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;font-size: 32px;line-height: 37px;">
-                                                                    4
+                                                                    {4}
                                                                 </p>
                                                             </p>
                                                         </div>
@@ -117,7 +117,7 @@
                                                             <p data-bsi-product-group="1"
                                                                 data-bsi-product-special-price-rappen="">
                                                                 <p style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;line-height:20px;font-size: 16px;vertical-align: top;">
-                                                                    35
+                                                                    {35}
                                                                 </p>
                                                             </p>
                                                         </div>

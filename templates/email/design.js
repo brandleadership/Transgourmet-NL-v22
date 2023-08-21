@@ -30,6 +30,7 @@ module.exports = cx.design
                 require('./content-elements/sections/lead'),
                 require('./content-elements/sections/lead-black'),
                 require('./content-elements/elements/single-product'),
+                require('./content-elements/elements/single-product-automated'),
                 require('./content-elements/sections/intro'),
                 require('./content-elements/sections/text-mit-bild'),
                 require('./content-elements/elements/nl-bild'),
@@ -44,6 +45,7 @@ module.exports = cx.design
             .withLabel('Produkte und Promotionen')
             .withContentElements(
                 require('./content-elements/sections/nl-spalten'),
+                require('./content-elements/sections/nl-spalten-auto'),
                 require('./content-elements/sections/brochure'),
                 require('./content-elements/sections/crossteaser')
             ),
@@ -87,6 +89,7 @@ module.exports = cx.design
                 require('./content-elements/elements/spacer-white'),
                 require('./content-elements/sections/intro'),
                 require('./content-elements/sections/nl-spalten'),
+                require('./content-elements/sections/nl-spalten-auto'),
                 require('./content-elements/elements/single-product'),
                 require('./content-elements/elements/nl-bild'),
                 require('./content-elements/elements/nl-button'),
