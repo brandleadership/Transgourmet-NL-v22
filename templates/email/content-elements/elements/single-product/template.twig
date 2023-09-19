@@ -8,30 +8,29 @@
 <table   border="0"   cellpadding="0"
     cellspacing="0" class=" mobile-full-width"
     width="100%"  data-bsi-element="{{ element }}"
-    data-bsi-element-part="product">
+   >
     <tr>
-    <td style="padding-bottom: 20px;">
+    <td style="border: 1px solid #e5e5e5;">
 <table align="left"
-    style="border: 1px solid #e5e5e5;"
     bgcolor="#ffffff"
     cellpadding="0"
     cellspacing="0"
     width="100%"
    class="mobile-full-width"
    >
+
      {% for index, element in order %}
         {% if element == 'image' %} 
             <tr>
                 <td colspan="3"
                     align="center"
-                    valign="top"
-                    style="height:168px;">
+                    valign="top">
                     <a href=""
                         target="_blank"
                         style="outline: none;color: #000; text-decoration: underline; border: 0px;">
                         <img alt="BSI"
                             border="0"
-                            width="190"
+                            width="160"
                             src="{{
                             src
                                 ?
@@ -39,7 +38,7 @@
                                     '../../../../../resources/whitelabel/product-list-item1.png'
                                 )
                             }}"
-                            style="display: block; width: 190px; height: auto;margin-bottom: 20px" />
+                            style="display: block; width: 160px; height: auto;margin-bottom: 20px" />
                     </a>
                 </td>
             </tr>
@@ -56,7 +55,7 @@
                         <tbody>
                             <tr>
                                 <td align="left"
-                                    style="padding-top:20px;padding-left: 15px;font-weight:bold;">
+                                    style="padding-top:20px;padding-left: 24px;font-weight:bold;">
                                     <a 
                                         style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal; color: #000000; font-size: 16px;line-height:20px;margin: 0;outline: none;text-decoration: none;"
                                         href="{{ company.website }}{{ trackingLinkSuffix }}"
@@ -69,7 +68,7 @@
                             </tr>
                             <tr>
                                 <td align="left"
-                                    style="padding-bottom:20px;padding-left: 15px;">
+                                    style="padding-bottom:20px;padding-left: 24px;">
                                     <div data-bsi-product-description=""
                                         data-bsi-product-group="{{
                                         productIndex
@@ -81,25 +80,27 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td align="left"
-                                    valign="top"
+                                    <td align="left"
+                                    valign="middle"
                                     bgcolor="#ffffff"
-                                    style="height:88px;width:278px;padding-left:25px;">
-                                    <div 
-                                        data-bsi-product-group="1"
-                                        data-bsi-product-priceunit=""
-                                        style="margin-left:10px;margin-top:10px;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;font-size: 16px;text-align: left;line-height:20px;">
-                                        Kg
-                                    </div>
-                                    <div style="text-align:center">
+                                    style="height: 56px;padding-left:24px;padding-bottom:24px">
+                             
                                         <table border="0"
                                             cellpadding="0"
                                             cellspacing="0"
-                                            align="center" >
+                                            align="left" >
                                             <tbody>
                                                 <tr>
-                                                    <td style="vertical-align: top;" align="left">
-                                                        <div style="display:inline-block;margin:0;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:bold; font-style:normal;color: #e20026;font-size: 58px;"
+                              <td style="vertical-align: top;padding-right:5px;" align="left">
+                                    <div 
+                                        data-bsi-product-group="1"
+                                        data-bsi-product-priceunit=""
+                                        style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;font-size: 16px;text-align: left;line-height:20px;">
+                                        Kg
+                                    </div>
+                              </td>
+                                                    <td style="vertical-align: top;padding-right: 5px;" align="left"> 
+                                                        <div style="margin:0;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:bold; font-style:normal;color: #e20026;font-size: 58px;text-align: left;"
                                                             data-bsi-product-group="1"
                                                             data-bsi-product-remove-if-regular-price="">
                                                             <p data-bsi-product-group="1"
@@ -110,23 +111,39 @@
                                                             </p>
                                                         </div>
                                                     </td>
-                                                    <td align="left" style="vertical-align: top; padding-top:0.4em">
-                                                        <div style="display:inline-block;text-align: center;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:bold; font-style:normal;color: #e20026;font-size: 32px;vertical-align: top;"
+                                                    <td align="left" style="vertical-align: top;">
+                                                        <div style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:bold; font-style:normal;color: #e20026;font-size: 32px;vertical-align: top;text-align: left;"
                                                             data-bsi-product-group="1"
                                                             data-bsi-product-remove-if-regular-price="">
                                                             <p data-bsi-product-group="1"
                                                                 data-bsi-product-special-price-rappen="">
-                                                                <p style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;line-height:20px;font-size: 16px;vertical-align: top;">
+                                                                <p style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;line-height:20px;font-size: 16px;">
                                                                     35
                                                                 </p>
                                                             </p>
                                                         </div>
-                                                    </td>
-                                                </tr>
+                                                     </td>
+                                                      </tr>
                                             </tbody>
                                         </table>
-                                    </div>
-                                </td>
+                                                     <td  style="height: 56px;padding-bottom:24px;padding-right:24px;">
+                                                     <div style="border: 1px solid rgba(229, 229, 229, 1);border-radius: 16px;padding: 17px;cursor:pointer">
+                                                      <a href="#"> 
+                                                     <img 
+                                                        width="24"
+                                                        height="24"
+                                                        src="{{
+                                                        src
+                                                            ?
+                                                            : bsi_cx_asset(
+                                                                '../../../../../resources/whitelabel/arrow.png'
+                                                            )
+                                                        }}"
+                                                        style="display: block; width: 24px;"
+                                                         /></a></div>
+                                                    </td>
+                                           
+                            
                             </tr>
                         </tbody>
                     </table>

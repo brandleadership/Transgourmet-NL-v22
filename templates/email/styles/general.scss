@@ -115,22 +115,6 @@ div[class='block-footer'] a[href^='sms'] {
     text-decoration: none;
 }
 
-// div[class='block-wrapper'],
-// div[class='block-header'],
-// div[class='block-footer'] {
-//     max-width: 740px !important;
-//     margin: 0 auto !important;
-//     background-color: #f4f4f4;
-// }
-
-// .block-wrapper,
-// .block-header,
-// .block-footer {
-//     max-width: 740px !important;
-//     margin: 0 auto !important;
-//     background-color: #f4f4f4;
-// }
-
 table[class='hideforlarge'] {
     display: none;
 }
@@ -171,5 +155,21 @@ table[class='product-border'] {
 @media (max-width: 740px) {
     .mobile-full-width {
         width: 100% !important;
+    }
+    div {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .mobile-title h1 {
+        font-size: 32px !important;
+    }
+    .mobile-text {
+        font-size: 18px !important;
+        word-break: normal;
+    }
+
+    .logo {
+        width: 130px !important;
     }
 }

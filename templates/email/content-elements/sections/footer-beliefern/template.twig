@@ -1,15 +1,6 @@
-<div data-bsi-element="footer" class="block-footer" >
-    <table style="border-width: 0px !important;"
-        border="0"
-        cellpadding="0"
-        cellspacing="0"
-        align="center"
-        width="100%"
-        bgcolor="ffffff" class="mobile-full-width">
-        <tbody>
-            <tr>
-                <td>
-                  <table align="center"
+<div data-bsi-element="footer" style="border-width: 0px !important;max-width:740px;margin:auto;">
+ 
+                    <table align="center"
                         bgcolor="#f4f4f4"
                         border="0"
                         cellpadding="0"
@@ -18,34 +9,32 @@
                         width="740">
                         <tbody>
                             <tr>
-                                <td align="center" width="540">
-                    <table align="center"
-                        bgcolor="#f4f4f4"
-                        border="0"
-                        cellpadding="0"
-                        cellspacing="0"
-                        class="mobile-full-width"
-                        width="540">
-                        <tbody>
+                                <td align="center">
+                                    <table border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        width="540"
+                                        class="mobile-full-width">
                             <tr>
                                 <td valign="top"
-                                  
+                                 
                                     width="100%"
                                     style="padding: 50px 0px;">
                                     <table align="center"
                                         border="0"
                                         cellpadding="0"
                                         cellspacing="0"
-                                        class="mobile-full-width"
-                                        width="100%">
+                                        width="100%" 
+                                     >
                                         <tbody>
                                             <tr>
-                                                <td width="540"
-                                                   >
+                                                <td width="100%"
+                                           
+                                                    style="padding: 50px 0px;">
                                                     <div style="border-width: 0px !important;margin-top: 0px!important;margin-bottom: 0px !important;"
-                                                        data-bsi-dropzone="footer-text-top">
+                                                        data-bsi-dropzone="footer-text-top-abholen">
                                                         {% block footer_top %}
-                                                            {% include '../../elements/footer-text-top/template.twig' %}
+                                                            {% include '../../elements/footer-text-top-abholen/template.twig' %}
                                                         {% endblock %}
                                                     </div>
                                                 </td>
@@ -57,10 +46,10 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td width="540"
-                                                   >
+                                                <td width="100%"  
+                                                    >
                                                     <div style="border-width: 0px !important;margin-top: 0px!important;margin-bottom: 0px !important;"
-                                                        data-bsi-dropzone="social">
+                                                        data-bsi-dropzone="social-abholen">
                                                         {% block social %}
                                                             {% include '../../elements/footer-social-follow/template.twig' %}
                                                         {% endblock %}
@@ -69,13 +58,14 @@
                                             </tr>
                                             <tr>
                                                 <td width="100%"
+                                               
                                                     valign="top">
                                                     <table align="left"
                                                         border="0"
                                                         cellpadding="0"
                                                         cellspacing="0"
-                                                        class="mobile-full-width"
-                                                        width="100%">
+                                                    class="mobile-full-width"
+                                                        width="100%" >
                                                         <tbody>
                                                             <tr>
                                                                 <td height="30"
@@ -86,11 +76,11 @@
                                                             <tr>
                                                                 <td align="left"
                                                                     valign="top"
-                                                                    class="devicewidth"
+                                                             
                                                                     width="100%"
                                                                     style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:400; font-style:normal;font-size: 13pt;color: #808080;">
-                                                                    <div style="border-width: 0px !important;"
-                                                                        data-bsi-dropzone="footerlegal">
+                                                                    <div style="border-width: 0px !important;color: #808080;"
+                                                                        data-bsi-dropzone="footerlegal-abholen">
                                                                         {% block footerlegal %}
                                                                             {% include '../../elements/footer-text/template.twig' %}
                                                                         {% endblock %}
@@ -106,11 +96,11 @@
                                                             <tr>
                                                                 <td align="left"
                                                                     valign="top"
-                                                                    class="devicewidth"
+                                                            
                                                                     width="100%"
                                                                     style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:400; font-style:normal;font-size: 13pt;color: #808080;">
                                                                     <div style="border-width: 0px !important;"
-                                                                        data-bsi-dropzone="footeraddress">
+                                                                        data-bsi-dropzone="footeraddress-abholen">
                                                                         {% block footeraddress %}
                                                                             {% include '../../elements/footer-address/template.twig' %}
                                                                         {% endblock %}
@@ -126,11 +116,11 @@
                                                             <tr>
                                                                 <td align="left"
                                                                     valign="top"
-                                                                    class="devicewidth"
+                                                            
                                                                     width="100%"
                                                                     style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:400; font-style:normal;font-size: 13pt;color: #808080;">
                                                                     <div style="border-width: 0px !important;"
-                                                                        data-bsi-dropzone="footerbottom">
+                                                                        data-bsi-dropzone="footerbottom-abholen">
                                                                         {% block footerbottom %}
                                                                             {% include '../../elements/footer-links/template.twig' %}
                                                                         {% endblock %}
@@ -153,11 +143,7 @@
                             </tr>
                         </tbody>
                     </table>
-                       </td>
-            </tr>
-        </tbody>
-    </table>
-                </td>
+                     </td>
             </tr>
         </tbody>
     </table>
