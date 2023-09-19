@@ -156,11 +156,16 @@ table[class='product-border'] {
     .mobile-full-width {
         width: 100% !important;
     }
-    div {
-        margin: 0;
-        max-width: 100%;
+    // div {
+    //     margin: 0;
+    //     max-width: 100%;
+    // }
+    .width-on-mob-logo {
+        width: 60%;
     }
-
+    .width-on-mob-link {
+        width: 40%;
+    }
     .mobile-title h1 {
         font-size: 32px !important;
     }

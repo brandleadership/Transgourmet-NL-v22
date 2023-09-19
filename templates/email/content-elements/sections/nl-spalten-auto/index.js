@@ -6,26 +6,28 @@ module.exports = cx.contentElement
     .withIcon(Icon.TWO_COLUMNS)
     .withFile(require('./template.twig'))
     .withDropzones(
-        cx.dropzone.withDropzone('nl-spalten-left-auto').withAllowedElements(
-            require('../../elements/single-product-automated'),
-            require('../../elements/spacer-grey'),
-            cx.dropzone
-                .withDropzone('nl-spalten-right-auto')
-                .withAllowedElements(
-                    require('../../elements/single-product-automated'),
-                    require('../../elements/spacer-grey')
-                )
-            // cx.dropzone
-            //     .withDropzone('nl-spalten-left-auto-2')
-            //     .withAllowedElements(
-            //         require('../../elements/single-product-automated'),
-            //         require('../../elements/spacer-grey')
-            //     ),
-            // cx.dropzone
-            //     .withDropzone('nl-spalten-right-auto-2')
-            //     .withAllowedElements(
-            //         require('../../elements/single-product-automated'),
-            //         require('../../elements/spacer-grey')
-            //     )
-        )
+        cx.dropzone
+            .withDropzone('nl-spalten-left-auto')
+            .withAllowedElements(
+                require('../../elements/single-product-automated'),
+                require('../../elements/spacer-grey'),
+                cx.dropzone
+                    .withDropzone('nl-spalten-right-auto')
+                    .withAllowedElements(
+                        require('../../elements/single-product-automated'),
+                        require('../../elements/spacer-grey')
+                    ),
+                cx.dropzone
+                    .withDropzone('nl-spalten-left-auto-2')
+                    .withAllowedElements(
+                        require('../../elements/single-product-automated'),
+                        require('../../elements/spacer-grey')
+                    ),
+                cx.dropzone
+                    .withDropzone('nl-spalten-right-auto-2')
+                    .withAllowedElements(
+                        require('../../elements/single-product-automated'),
+                        require('../../elements/spacer-grey')
+                    )
+            )
     );
