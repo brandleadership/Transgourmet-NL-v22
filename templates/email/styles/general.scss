@@ -156,10 +156,19 @@ table[class='product-border'] {
     .mobile-full-width {
         width: 100% !important;
     }
-    // div {
-    //     margin: 0;
-    //     max-width: 100%;
-    // }
+
+    .padding-mobile {
+        padding: 0px 15px;
+    }
+
+    .footer-mob-padding {
+        margin-top: 40px !important;
+    }
+
+    .mobile-column {
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+    }
     .width-on-mob-logo {
         width: 60%;
     }
