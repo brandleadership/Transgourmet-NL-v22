@@ -31,6 +31,8 @@ module.exports = cx.design
                 require('./content-elements/sections/lead-black'),
                 require('./content-elements/elements/single-product'),
                 require('./content-elements/elements/single-product-automated'),
+                require('./content-elements/elements/double-card'),
+                require('./content-elements/elements/double-card-auto'),
                 require('./content-elements/sections/intro'),
                 require('./content-elements/sections/text-mit-bild'),
                 require('./content-elements/elements/nl-bild'),

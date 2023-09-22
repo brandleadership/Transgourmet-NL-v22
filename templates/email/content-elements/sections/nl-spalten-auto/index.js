@@ -28,6 +28,12 @@ module.exports = cx.contentElement
                     .withAllowedElements(
                         require('../../elements/single-product-automated'),
                         require('../../elements/spacer-grey')
+                    ),
+                cx.dropzone
+                    .withDropzone('nl-spalten-double-card')
+                    .withAllowedElements(
+                        require('../../elements/spacer-grey'),
+                        require('../../elements/double-card-auto')
                     )
             )
     );

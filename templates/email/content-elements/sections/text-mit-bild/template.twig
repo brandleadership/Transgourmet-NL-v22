@@ -112,7 +112,9 @@
                                                                 align="left"
                                                                 data-bsi-dropzone="button">
                                                                 {% block button %}
-                                                                    {% include '../../elements/nl-button/template.twig' %}
+                                                                    {% include '../../elements/nl-button/template.twig' with {
+                                                                        _href: "[Jets weiterlesen]"
+                                                                    }%}
                                                                 {% endblock %}
                                                             </td>
                                                         </tr>

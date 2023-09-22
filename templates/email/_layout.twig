@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"   xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
     <head>
         <title>
             {{ properties.title }}
         </title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <style>
-            {{ bsi_cx_css_inline() }}
-        </style>
-        <style type="text/css">
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta name="x-apple-disable-message-reformatting" />
+<meta content="width=device-width,initial-scale=1,target-densitydpi=device-dpi"
+    name="viewport" />
+<meta name="google" content="notranslate" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="x-apple-disable-message-reformatting" />
+<meta http-equiv="Content-Security-Policy" content=" media-src 'self' data: blob: *;">
+        <link type="text/css" rel="stylesheet" href="{{ bsi_cx_css_href() }}"/>
+        {# <style type="text/css">
     {% include '../../templates/email/styles/general.scss' %}
-</style>
-        <!-- [if (gte mso 9)|(IE)]>
-        <style type="text/css">
-        table {
-        border-collapse: collapse;
-        border-spacing: 0;
-        mso-table-lspace: 0pt !important;
-        mso-table-rspace: 0pt !important; }
-        </style>
-        <![endif] -->
+</style> #}
+      
     </head>
     <body>
         <center >
