@@ -11,12 +11,12 @@ module.exports = cx.contentElement
             .withDropzone('double-card-left')
             .withAllowedElements(
                 require('../../elements/single-product'),
-                require('../../elements/spacer-grey'),
-                cx.dropzone
-                    .withDropzone('double-card-right')
-                    .withAllowedElements(
-                        require('../../elements/single-product'),
-                        require('../../elements/spacer-grey')
-                    )
+                require('../../elements/spacer-grey')
+            ),
+        cx.dropzone
+            .withDropzone('double-card-right')
+            .withAllowedElements(
+                require('../../elements/single-product'),
+                require('../../elements/spacer-grey')
             )
     );

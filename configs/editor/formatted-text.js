@@ -42,7 +42,7 @@ module.exports = cx.htmlEditorConfig
         Format.H6,
         Format.PRE
     )
-    .withFontSizes(8, 9, 10, 11, 12, 14, 16, 18, 24, 30, 36, 48, 72)
+    .withFontSizes(8, 9, 10, 11, 12, 14, 16, 18, 24, 30, 32, 36, 48, 72)
     .withFontSizeUnit(FontSizeUnit.PX)
     .withFontSizeDefault(16)
     .withLineHeights(1, 1.15, 1.5, 2)

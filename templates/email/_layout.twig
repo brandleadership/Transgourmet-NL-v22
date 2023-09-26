@@ -15,15 +15,15 @@
 <meta name="format-detection" content="telephone=no" />
 <meta name="format-detection" content="email=no" />
 <meta name="x-apple-disable-message-reformatting" />
-<meta http-equiv="Content-Security-Policy" content=" media-src 'self' data: blob: *;">
+ <meta http-equiv="Content-Security-Policy" content=" media-src 'self' data: blob: *;"> 
         <link type="text/css" rel="stylesheet" href="{{ bsi_cx_css_href() }}"/>
-        {# <style type="text/css">
+         <style type="text/css">
     {% include '../../templates/email/styles/general.scss' %}
-</style> #}
+</style> 
       
     </head>
     <body>
-        <center >
+     
             <header data-bsi-dropzone="header">
                 {% block header %}
 
@@ -41,7 +41,7 @@
 
                 {% endblock %}
             </footer>
-        </center>
+      
    
     </body>
 </html>

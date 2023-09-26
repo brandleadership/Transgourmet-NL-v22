@@ -10,30 +10,30 @@ module.exports = cx.contentElement
             .withDropzone('nl-spalten-left-auto')
             .withAllowedElements(
                 require('../../elements/single-product-automated'),
+                require('../../elements/spacer-grey')
+            ),
+        cx.dropzone
+            .withDropzone('nl-spalten-right-auto')
+            .withAllowedElements(
+                require('../../elements/single-product-automated'),
+                require('../../elements/spacer-grey')
+            ),
+        cx.dropzone
+            .withDropzone('nl-spalten-left-auto-2')
+            .withAllowedElements(
+                require('../../elements/single-product-automated'),
+                require('../../elements/spacer-grey')
+            ),
+        cx.dropzone
+            .withDropzone('nl-spalten-right-auto-2')
+            .withAllowedElements(
+                require('../../elements/single-product-automated'),
+                require('../../elements/spacer-grey')
+            ),
+        cx.dropzone
+            .withDropzone('nl-spalten-double-card')
+            .withAllowedElements(
                 require('../../elements/spacer-grey'),
-                cx.dropzone
-                    .withDropzone('nl-spalten-right-auto')
-                    .withAllowedElements(
-                        require('../../elements/single-product-automated'),
-                        require('../../elements/spacer-grey')
-                    ),
-                cx.dropzone
-                    .withDropzone('nl-spalten-left-auto-2')
-                    .withAllowedElements(
-                        require('../../elements/single-product-automated'),
-                        require('../../elements/spacer-grey')
-                    ),
-                cx.dropzone
-                    .withDropzone('nl-spalten-right-auto-2')
-                    .withAllowedElements(
-                        require('../../elements/single-product-automated'),
-                        require('../../elements/spacer-grey')
-                    ),
-                cx.dropzone
-                    .withDropzone('nl-spalten-double-card')
-                    .withAllowedElements(
-                        require('../../elements/spacer-grey'),
-                        require('../../elements/double-card-auto')
-                    )
+                require('../../elements/double-card-auto')
             )
     );

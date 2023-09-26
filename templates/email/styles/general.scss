@@ -1,8 +1,3 @@
-$base_font_color: bsiProperty('styles.base_font_color');
-$background_site: bsiProperty('styles.background_site');
-$link_font_color: bsiProperty('styles.link_font_color');
-$footer_text_color: bsiProperty('$footer_text_color');
-
 :root {
     --red: #e20026;
     --black: #000000;
@@ -54,8 +49,6 @@ $footer_text_color: bsiProperty('$footer_text_color');
 }
 
 body {
-    color: $base_font_color;
-    background-color: $background_site;
     font-family: 'Transgourmet', 'Trebuchet MS', 'sans-serif';
     width: 100% !important;
     -webkit-text-size-adjust: 100%;
@@ -78,6 +71,10 @@ b {
 p {
     margin: 0;
 }
+div {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
 img {
     outline: none;
     text-decoration: none;
@@ -85,13 +82,16 @@ img {
     -ms-interpolation-mode: bicubic;
 }
 a {
-    color: $link_font_color;
-    text-decoration: underline;
+    text-decoration: none;
     display: inline-block;
 }
 a img {
     border: none;
     display: block;
+}
+
+span {
+    color: #000000;
 }
 table {
     border-collapse: collapse;
@@ -104,24 +104,9 @@ table td {
 a[href^='tel'],
 a[href^='sms'] {
     text-decoration: none;
-    color: $link_font_color !important;
     pointer-events: auto;
     cursor: pointer;
-}
-div[class='block-footer'] a,
-div[class='block-footer'] a[href^='tel'],
-div[class='block-footer'] a[href^='sms'] {
-    color: $footer_text_color;
-    text-decoration: none;
-}
-
-table[class='hideforlarge'] {
-    display: none;
-}
-
-img[class='mobile-image-zweispalter'] {
-    width: 220px !important;
-    height: auto !important;
+    color: #808080;
 }
 
 .hidden {
@@ -152,9 +137,26 @@ table[class='product-border'] {
     color: #e20026 !important;
 }
 
+.mobile-column {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 @media (max-width: 740px) {
     .mobile-full-width {
         width: 100% !important;
+    }
+
+    .mobile-title h1 {
+        font-size: 32px !important;
+        word-break: normal;
+    }
+    .mobile-text {
+        font-size: 18px !important;
+        word-break: normal;
+    }
+    .mobile-space {
+        height: 48px !important;
     }
 
     .padding-mobile {
@@ -163,27 +165,28 @@ table[class='product-border'] {
 
     .footer-mob-padding {
         margin-top: 40px !important;
+        text-align: left !important;
+    }
+
+    .footer-mob-app-column {
+        width: 35% !important;
+    }
+
+    .footer-mob-align-text-left {
+        text-align: left !important;
     }
 
     .mobile-column {
         flex-direction: column !important;
-        justify-content: flex-start !important;
-    }
-    .width-on-mob-logo {
-        width: 60%;
-    }
-    .width-on-mob-link {
-        width: 40%;
-    }
-    .mobile-title h1 {
-        font-size: 32px !important;
-    }
-    .mobile-text {
-        font-size: 18px !important;
-        word-break: normal;
+        justify-content: space-between !important;
     }
 
     .logo {
+        width: 100% !important;
+        max-width: 130px !important;
+    }
+
+    .logoprotega {
         width: 130px !important;
     }
 }
