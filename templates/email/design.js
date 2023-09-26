@@ -40,7 +40,8 @@ module.exports = cx.design
                 require('./content-elements/elements/nl-brochure-3-bild-row'),
                 require('./content-elements/elements/nl-brochure-image'),
                 require('./content-elements/elements/nl-crossteaser-item'),
-                require('./content-elements/sections/text-mit-bild-two-links')
+                require('./content-elements/sections/text-mit-bild-two-links'),
+                require('./content-elements/elements/formatted-text')
             ),
         cx.contentElementGroup
             .withGroupId('produkte-promotionen')
@@ -100,7 +101,8 @@ module.exports = cx.design
                 require('./content-elements/elements/nl-brochure-image'),
                 require('./content-elements/sections/brochure'),
                 require('./content-elements/sections/crossteaser'),
-                require('./content-elements/sections/text-mit-bild-two-links')
+                require('./content-elements/sections/text-mit-bild-two-links'),
+                require('./content-elements/elements/formatted-text')
             ),
         cx.dropzone
             .withDropzone('footer')
