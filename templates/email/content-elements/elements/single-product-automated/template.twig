@@ -10,7 +10,7 @@
    width="100%"  data-bsi-element="{{ element }}"
    >
    <tr>
-      <td style="border: 1px solid #e5e5e5;">
+      <td height="353" bgcolor="#ffffff" style="border: 1px solid #e5e5e5;height:353px;">
          <table align="left"
             bgcolor="#ffffff"
             cellpadding="0"
@@ -26,13 +26,14 @@
                   valign="top"
                   bgcolor="#ffffff"
                   >
-                  <a href=""
+                  <a href="{{ company.website }}{{ trackingLinkSuffix }}"
                      target="_blank"
                      style="outline: none;color: #000; border: 0px;">
                   <img alt="BSI"
                      border="0"
                      width="160"
                      max-width="160"
+                     data-bsi-element-part="image"
                      src="{{
                      src
                      ?
@@ -44,8 +45,7 @@
                   </a>
                </td>
             </tr>
-            {% endif %} 
-            {% if element == 'description' %}
+        
             <tr>
                <td align="left"  valign="top">
                   <table align="left"
@@ -62,8 +62,7 @@
                                  style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal; color: #000000; font-size: 16px;line-height:20px;margin: 0;outline: none;text-decoration: none;"
                                  href="{{ company.website }}{{ trackingLinkSuffix }}"
                                  target="_blank"
-                                 data-bsi-product-group="1"
-                                 data-bsi-product-name="">
+                               data-bsi-element-part="formatted-text">
                               {Quality Geschirspulmittel}
                               </a>
                            </td>
@@ -71,10 +70,7 @@
                         <tr>
                            <td align="left"
                               style="padding-bottom:20px;padding-left: 24px;">
-                              <div data-bsi-product-description=""
-                                 data-bsi-product-group="{{
-                                 productIndex
-                                 }}"
+                              <div data-bsi-element-part="formatted-text"
                                  style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:400; font-style:normal; color: #000000; font-size: 14px;line-height:16px;margin: 0;">
                                  {description}
                               </div>
@@ -84,7 +80,7 @@
                            <td align="left"
                               valign="middle"
                               bgcolor="#ffffff"
-                              style="vertical-align:middle;padding-left:24px;padding-right:24px;padding-bottom:24px">
+                              style="vertical-align:middle;padding-left:24px;padding-bottom:24px">
                               <table border="0"
                                  cellpadding="0"
                                  cellspacing="0"
@@ -93,33 +89,27 @@
                                     <tr>
                                        <td align="left" style="vertical-align: top;padding-right: 5px;">
                                           <div 
-                                             data-bsi-product-group="1"
-                                             data-bsi-product-priceunit=""
-                                             style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;font-size: 16px;text-align: left;line-height:20px;">
+                                            data-bsi-element-part="plain-text"
+                                             style="font-size:16px;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;text-align: left;line-height:20px;">
                                              {Iso}
                                           </div>
                                        </td>
                                        <td style="vertical-align: top;padding-right: 5px;" align="left">
-                                          <div style="margin:0;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:bold; font-style:normal;color: #e20026;font-size: 58px;"
-                                             data-bsi-product-group="1"
-                                             data-bsi-product-remove-if-regular-price="">
-                                             <p data-bsi-product-group="1"
-                                                data-bsi-product-special-price-franken="">
-                                             <p style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;font-size: 32px;line-height: 37px;">
+                                          <div style="margin:0;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:bold; font-style:normal;color: #e20026;font-size: 32px;"
+                                          >
+                                             <p data-bsi-element-part="plain-text"  style="font-size:32px;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;line-height: 37px;">
                                                 {40}
-                                             </p>
+                                           
                                              </p>
                                           </div>
                                        </td>
                                        <td align="left" style="vertical-align: top;">
-                                          <div style="text-align: left;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:bold; font-style:normal;color: #e20026;font-size: 32px;vertical-align: top;"
-                                             data-bsi-product-group="1"
-                                             data-bsi-product-remove-if-regular-price="">
-                                             <p data-bsi-product-group="1"
-                                                data-bsi-product-special-price-rappen="">
-                                             <p style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;line-height:20px;font-size: 16px;vertical-align: top;">
+                                          <div style="font-size:16px;text-align: left;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:bold; font-style:normal;color: #e20026;vertical-align: top;"
+                                          >
+                                             <p data-bsi-element-part="plain-text" style="font-size:16px;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal;color: #e20026;line-height:20px;font-size: 16px;vertical-align: top;">
+                                          
                                                 {35}
-                                             </p>
+                                            
                                              </p>
                                           </div>
                                        </td>

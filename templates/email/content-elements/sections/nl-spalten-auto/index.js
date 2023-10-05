@@ -31,7 +31,7 @@ module.exports = cx.contentElement
                 require('../../elements/spacer-grey')
             ),
         cx.dropzone
-            .withDropzone('nl-spalten-double-card')
+            .withDropzone('nl-spalten-double-card-auto')
             .withAllowedElements(
                 require('../../elements/spacer-grey'),
                 require('../../elements/double-card-auto')
