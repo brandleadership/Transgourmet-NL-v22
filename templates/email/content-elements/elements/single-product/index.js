@@ -6,6 +6,6 @@ module.exports = cx.contentElement
     .withIcon(Icon.TEXT_WITH_IMAGE)
     .withFile(require('./template.twig'))
     .withParts(
-        cx.part.raw('product').withLabel('Produkt'),
-        cx.part.image.withLabel('Image for Button')
+        cx.part.raw('product').withLabel('Produkt')
+        // cx.part.image.withLabel('Image for Button')
     );
