@@ -83,6 +83,7 @@ module.exports = cx.design
                 require('./content-elements/sections/header-2'),
                 require('./content-elements/sections/header-3')
             ),
+
         cx.dropzone.withDropzone('main').withAllowedElements(
             require('./content-elements/sections/lead'),
             require('./content-elements/sections/lead-black'),
@@ -103,8 +104,10 @@ module.exports = cx.design
             require('./content-elements/sections/text-mit-bild-two-links'),
             require('./content-elements/elements/formatted-text')
         ),
+
         cx.dropzone
             .withDropzone('footer')
+            .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('./content-elements/sections/footer-beliefern'),
                 require('./content-elements/sections/footer-abholen')
