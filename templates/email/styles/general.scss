@@ -1,0 +1,187 @@
+:root {
+    --red: #e20026;
+    --black: #000000;
+    --grey-bg: #f4f4f4;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#outlook a {
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Trebuchet';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../../resources/fonts/trebuc.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Transgourmet';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Transgourmet-Bold'),
+        url('https://www.transgourmet.ch/themes/contrib/custom_theme/resources/assets/fonts/transgourmet/Transgourmet_W_Bd.woff')
+            format('woff');
+    mso-font-alt: 'Trebuchet MS', Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'Transgourmet';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Transgourmet-Light'),
+        url('https://www.transgourmet.ch/themes/contrib/custom_theme/resources/assets/fonts/transgourmet/Transgourmet_W_Lt.woff')
+            format('woff');
+    mso-font-alt: 'Trebuchet MS', Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'Transgourmet';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Transgourmet-Regular'),
+        url('https://www.transgourmet.ch/themes/contrib/custom_theme/resources/assets/fonts/transgourmet/Transgourmet_W_Rg.woff')
+            format('woff');
+    mso-font-alt: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'Transgourmet', 'Trebuchet MS', 'sans-serif';
+    width: 100% !important;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+strong,
+b {
+    font-weight: bold !important;
+}
+p {
+    margin: 0;
+}
+div {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+img {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    -ms-interpolation-mode: bicubic;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+a img {
+    border: none;
+    display: block;
+}
+
+span {
+    color: #000000;
+}
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+table td {
+    border-collapse: collapse;
+}
+a[href^='tel'],
+a[href^='sms'] {
+    text-decoration: none;
+    pointer-events: auto;
+    cursor: pointer;
+    color: #808080;
+}
+
+.hidden {
+    display: none;
+}
+
+// .bildtable {
+//     padding-top: 10px !important;
+// }
+
+// table[class='product-border'] {
+//     line-height: 1px;
+//     width: 2px;
+//     border-width: 1px;
+//     background-color: #ffffff;
+//     height: 235px;
+// }
+
+.footer-links a[x-apple-data-detectors] {
+    color: #e20026 !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+.footer-links a {
+    color: #e20026 !important;
+}
+
+.mobile-column {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 740px) {
+    .mobile-full-width {
+        width: 100% !important;
+    }
+
+    .mobile-title h1 {
+        font-size: 32px !important;
+        word-break: normal;
+    }
+    .mobile-text {
+        font-size: 18px !important;
+        word-break: normal;
+    }
+    .mobile-space {
+        height: 48px !important;
+    }
+
+    .padding-mobile {
+        padding: 0px 15px;
+    }
+
+    .footer-mob-padding {
+        margin-top: 40px !important;
+        text-align: left !important;
+    }
+
+    .footer-mob-app-column {
+        width: 35% !important;
+    }
+
+    .footer-mob-align-text-left {
+        text-align: left !important;
+    }
+
+    .mobile-column {
+        flex-direction: column !important;
+        justify-content: space-between !important;
+    }
+
+    .logo {
+        width: 130px !important;
+    }
+}

@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>{{ properties.title }}</title>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-    {{ bsi_cx_css_inline() }}
-  </style>
-</head>
-<body>
+<html lang="en"   xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+    <head>
+        <title>
+            {{ properties.title }}
+        </title>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+<meta name="x-apple-disable-message-reformatting" />
+<meta content="width=device-width,initial-scale=1,target-densitydpi=device-dpi"
+    name="viewport" />
+<meta name="google" content="notranslate" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="x-apple-disable-message-reformatting" />
+ <meta http-equiv="Content-Security-Policy" content=" media-src 'self' data: blob: *;"> 
+        <link type="text/css" rel="stylesheet" href="{{ bsi_cx_css_href() }}"/>
+         <style type="text/css">
+    {% include '../../templates/email/styles/general.scss' %}
+</style> 
+      
+    </head>
+    <body>
+     
+            <header data-bsi-dropzone="header">
+                {% block header %}
 
-{# Be aware, that this is no valid email template. #}
+                {% endblock %}
+            </header>
 
-<main data-bsi-dropzone="a1683342-d4a7-4c26-924e-bce162c4399f">
-  {% block main %}{% endblock %}
-</main>
+            <main data-bsi-dropzone="main"  >
+                {% block main %}
 
-<footer>
-  Built for BSI CX {{ cx.version.TARGET.toString() }}
-</footer>
+                {% endblock %}
+            </main>
 
-</body>
+            <footer data-bsi-dropzone="footer" >
+                {% block footer %}
+
+                {% endblock %}
+            </footer>
+      
+   
+    </body>
 </html>
