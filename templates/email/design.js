@@ -83,27 +83,28 @@ module.exports = cx.design
                 require('./content-elements/sections/header-2'),
                 require('./content-elements/sections/header-3')
             ),
-        cx.dropzone
-            .withDropzone('main')
-            .withAllowedElements(
-                require('./content-elements/sections/lead'),
-                require('./content-elements/sections/lead-black'),
-                require('./content-elements/elements/spacer-grey'),
-                require('./content-elements/elements/spacer-white'),
-                require('./content-elements/sections/intro'),
-                require('./content-elements/sections/nl-spalten'),
-                require('./content-elements/sections/nl-spalten-auto'),
-                require('./content-elements/elements/single-product'),
-                require('./content-elements/elements/nl-bild'),
-                require('./content-elements/elements/nl-button'),
-                require('./content-elements/sections/text-mit-bild'),
-                require('./content-elements/elements/nl-brochure-3-bild-row'),
-                require('./content-elements/elements/nl-brochure-image'),
-                require('./content-elements/sections/brochure'),
-                require('./content-elements/sections/crossteaser'),
-                require('./content-elements/sections/text-mit-bild-two-links'),
-                require('./content-elements/elements/formatted-text')
-            ),
+
+        cx.dropzone.withDropzone('main').withAllowedElements(
+            require('./content-elements/sections/lead'),
+            require('./content-elements/sections/lead-black'),
+            require('./content-elements/elements/spacer-grey'),
+            require('./content-elements/elements/spacer-white'),
+            require('./content-elements/sections/intro'),
+            require('./content-elements/sections/nl-spalten'),
+            require('./content-elements/sections/nl-spalten-auto'),
+            // require('./content-elements/elements/single-product'),
+            // require('./content-elements/elements/single-product-automated'),
+            require('./content-elements/elements/nl-bild'),
+            require('./content-elements/elements/nl-button'),
+            require('./content-elements/sections/text-mit-bild'),
+            require('./content-elements/elements/nl-brochure-3-bild-row'),
+            // require('./content-elements/elements/nl-brochure-image'),
+            require('./content-elements/sections/brochure'),
+            require('./content-elements/sections/crossteaser'),
+            require('./content-elements/sections/text-mit-bild-two-links'),
+            require('./content-elements/elements/formatted-text')
+        ),
+
         cx.dropzone
             .withDropzone('footer')
             .withMaxAllowedElements(1)
