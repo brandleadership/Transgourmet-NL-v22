@@ -95,7 +95,7 @@ module.exports = cx.design
             // require('./content-elements/elements/single-product'),
             // require('./content-elements/elements/single-product-automated'),
             require('./content-elements/elements/nl-bild'),
-            require('./content-elements/elements/nl-button'),
+            // require('./content-elements/elements/nl-button'),
             require('./content-elements/sections/text-mit-bild'),
             require('./content-elements/elements/nl-brochure-3-bild-row'),
             // require('./content-elements/elements/nl-brochure-image'),

@@ -1,7 +1,7 @@
 {% extends './_layout.twig' %}
 
 {% block header %}
-
+    {% include './content-elements/sections/header-1/template.twig' %}
 {% endblock %}
 
 {% block main %}
@@ -9,5 +9,9 @@
 {% endblock %}
 
 {% block footer %}
+    {% embed './content-elements/sections/footer-beliefern/template.twig' %}
+        {% block footer_top_1 %}
 
+        {% endblock %}
+    {% endembed %}
 {% endblock %}

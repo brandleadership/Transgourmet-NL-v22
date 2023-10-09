@@ -15,33 +15,37 @@
 <meta name="format-detection" content="telephone=no" />
 <meta name="format-detection" content="email=no" />
 <meta name="x-apple-disable-message-reformatting" />
- <meta http-equiv="Content-Security-Policy" content=" media-src 'self' data: blob: *;"> 
+ <meta http-equiv="Content-Security-Policy" content=" media-src 'self' data: blob: *;">
         <link type="text/css" rel="stylesheet" href="{{ bsi_cx_css_href() }}"/>
          <style type="text/css">
     {% include '../../templates/email/styles/general.scss' %}
-</style> 
-      
+</style>
+
     </head>
     <body>
-     
+
             <header data-bsi-dropzone="header">
                 {% block header %}
-
+                    {% include './content-elements/sections/header-1/template.twig' %}
                 {% endblock %}
             </header>
 
-            <main data-bsi-dropzone="main"  >
+            <main data-bsi-dropzone="main">
                 {% block main %}
 
                 {% endblock %}
             </main>
 
-            <footer data-bsi-dropzone="footer" >
+            <footer data-bsi-dropzone="footer">
                 {% block footer %}
+                    {% embed './content-elements/sections/footer-beliefern/template.twig' %}
+                        {% block footer_top_1 %}
 
+                        {% endblock %}
+                    {% endembed %}
                 {% endblock %}
             </footer>
-      
-   
+
+
     </body>
 </html>

@@ -36,7 +36,7 @@ module.exports = {
                 '[Impressum|url=https://www.transgourmet.ch/de/impressum]',
             datenschutz:
                 '[Datenschutz|url=https://www.transgourmet.ch/de/datenschutz]',
-            einstellungen_aktualisieren: '[Einstellungen aktualisieren]',
+            einstellungen_aktualisieren: '[Einstellungen]',
             abmelden: '[Abmelden]',
 
             agb: '[AGB|url=https://www.transgourmet.ch/de/unternehmen/agb]',
