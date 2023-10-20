@@ -143,9 +143,20 @@ a[href^='sms'] {
     justify-content: space-between;
 }
 
+html.bsi-ce-edit-mode .display-in-editor {
+    display: block !important;
+    color: black !important;
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+    text-align: center;
+}
 @media (max-width: 740px) {
     .mobile-full-width {
         width: 100% !important;
+    }
+    .mobile-full-width-table {
+        width: 100% !important;
+        display: table !important;
     }
 
     .mobile-title h1 {
@@ -158,6 +169,15 @@ a[href^='sms'] {
     }
     .mobile-space {
         height: 48px !important;
+    }
+    .mobile-space-block {
+        width: 100% !important;
+        display: table !important;
+        height: 48px !important;
+    }
+    .row-block {
+        display: block !important;
+        width: 100% !important;
     }
 
     .padding-mobile {

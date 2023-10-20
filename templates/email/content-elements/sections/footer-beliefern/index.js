@@ -7,8 +7,8 @@ module.exports = cx.contentElement
     .withFile(require('./template.twig'))
     .withDropzones(
         cx.dropzone
-            .withDropzone('footer-text-top')
-            .withAllowedElements(require('../../elements/footer-text-top')),
+            .withDropzone('footer-agh-links')
+            .withAllowedElements(require('../../elements/footer-agh-links')),
         cx.dropzone
             .withDropzone('social')
             .withAllowedElements(

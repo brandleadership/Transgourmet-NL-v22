@@ -3,7 +3,7 @@ const baseProperties = require('./properties');
 module.exports = {
     ...baseProperties,
     trans: {
-        product_list_title: 'Pour vous recommander (Cartes produit)',
+        product_list_title: 'Pour vous recommander',
         crossteaser: 'Mots croisés',
         aktionen: 'Actions',
         maerkte: 'Marchés',
@@ -24,6 +24,7 @@ module.exports = {
         brochuretitle: 'Des actions et plus encore',
         followus: 'Suivez-nous sur les médias sociaux',
         anzeige: 'Publicité',
+        preview: 'Actualités de Transgourmet/Prodega',
         links: {
             aktionen_prodega: '[Aktionen|url=https://www.prodega.ch/actions]',
             aktionen_tg: '[Aktionen|url=https://www.transgourmet.ch/actions]',
