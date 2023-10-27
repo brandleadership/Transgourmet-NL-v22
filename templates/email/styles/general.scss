@@ -13,6 +13,27 @@
     padding: 0;
 }
 
+.link-style a {
+ color: var(--red) !important;
+    text-decoration: none !important;
+}
+
+.link-style a > span {
+  color: var(--red) !important;
+    text-decoration: none !important;
+}
+
+[data-value="formatted-text"] a > span {
+    color: var(--red) !important;
+    text-decoration: none !important;
+}
+
+[data-value="formatted-text"] a {
+    color: var(--red) !important;
+    text-decoration: none !important;
+}
+
+
 @font-face {
     font-family: 'Trebuchet';
     font-style: normal;
