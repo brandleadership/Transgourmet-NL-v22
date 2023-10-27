@@ -24,7 +24,8 @@ module.exports = {
         brochuretitle: 'Promozioni e molto altro ancora',
         followus: 'Seguiteci sui Social Media!',
         anzeige: 'Pubblicità',
-        preview: 'Novità da Transgourmet/Prodega',
+        preview: 'Attualità di Transgourmet/Prodega',
+        lead_text: 'La Newsletter per clienti Prodega ',
         links: {
             aktionen_prodega:
                 '[Aktionen|url=https://www.prodega.ch/it/ritirare/promozioni]',

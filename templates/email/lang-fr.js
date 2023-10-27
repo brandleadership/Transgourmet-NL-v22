@@ -25,6 +25,7 @@ module.exports = {
         followus: 'Suivez-nous sur les médias sociaux',
         anzeige: 'Publicité',
         preview: 'Actualités de Transgourmet/Prodega',
+        lead_text: 'La Newsletter pour les clients de Prodega',
         links: {
             aktionen_prodega: '[Aktionen|url=https://www.prodega.ch/actions]',
             aktionen_tg: '[Aktionen|url=https://www.transgourmet.ch/actions]',
