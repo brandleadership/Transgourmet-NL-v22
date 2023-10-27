@@ -9,14 +9,16 @@ module.exports = cx.contentElement
     .withDropzones(
         cx.dropzone
             .withDropzone('double-card-left')
+            .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('../../elements/single-product'),
-                require('../../elements/spacer-grey')
+               
             ),
         cx.dropzone
             .withDropzone('double-card-right')
+            .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('../../elements/single-product'),
-                require('../../elements/spacer-grey')
+              
             )
     );

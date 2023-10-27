@@ -64,8 +64,6 @@ module.exports = cx.design
                 require('./content-elements/elements/footer-text'),
                 require('./content-elements/elements/footer-agh-links'),
                 require('./content-elements/elements/footer-bgh-links')
-                // require('./content-elements/elements/footer-text-top'),
-                // require('./content-elements/elements/footer-text-top-abholen')
             ),
         cx.contentElementGroup
             .withGroupId('diverses')
@@ -94,13 +92,9 @@ module.exports = cx.design
             require('./content-elements/sections/intro'),
             require('./content-elements/sections/nl-spalten'),
             require('./content-elements/sections/nl-spalten-auto'),
-            // require('./content-elements/elements/single-product'),
-            // require('./content-elements/elements/single-product-automated'),
             require('./content-elements/elements/nl-bild'),
-            // require('./content-elements/elements/nl-button'),
             require('./content-elements/sections/text-mit-bild'),
             require('./content-elements/elements/nl-brochure-3-bild-row'),
-            // require('./content-elements/elements/nl-brochure-image'),
             require('./content-elements/sections/brochure'),
             require('./content-elements/sections/crossteaser'),
             require('./content-elements/sections/text-mit-bild-two-links'),

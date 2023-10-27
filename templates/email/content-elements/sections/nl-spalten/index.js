@@ -8,32 +8,36 @@ module.exports = cx.contentElement
     .withDropzones(
         cx.dropzone
             .withDropzone('nl-spalten-left')
+            .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('../../elements/single-product'),
-                require('../../elements/spacer-grey')
+              
             ),
         cx.dropzone
             .withDropzone('nl-spalten-right')
+            .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('../../elements/single-product'),
-                require('../../elements/spacer-grey')
+               
             ),
         cx.dropzone
             .withDropzone('nl-spalten-right-2')
+            .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('../../elements/single-product'),
-                require('../../elements/spacer-grey')
+               
             ),
         cx.dropzone
             .withDropzone('nl-spalten-right-2')
+            .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('../../elements/single-product'),
-                require('../../elements/spacer-grey')
+               
             ),
         cx.dropzone
             .withDropzone('nl-spalten-double-card')
             .withAllowedElements(
-                require('../../elements/spacer-grey'),
+             
                 require('../../elements/double-card')
             )
     );
