@@ -3,7 +3,7 @@ const baseProperties = require('./properties');
 module.exports = {
     ...baseProperties,
     trans: {
-        product_list_title: 'Pour vous recommander',
+        product_list_title: 'Recommandé pour vous',
         crossteaser: 'Mots croisés',
         aktionen: 'Actions',
         maerkte: 'Marchés',
