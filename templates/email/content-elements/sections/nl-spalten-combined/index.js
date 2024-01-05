@@ -1,8 +1,8 @@
 const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
-    .withElementId('nl-spalten')
-    .withLabel('Produkt – 4 Stücke Man. – 2 Sp.')
+    .withElementId('nl-spalten-combined')
+    .withLabel('Produkt – 4 Stücke Combined. – 2 Sp.')
     .withIcon(Icon.TWO_COLUMNS)
     .withFile(require('./template.twig'))
     .withDropzones(
@@ -11,6 +11,7 @@ module.exports = cx.contentElement
             .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('../../elements/single-product'),
+                 require('../../elements/single-product-automated'),
               
             ),
         cx.dropzone
@@ -18,6 +19,7 @@ module.exports = cx.contentElement
             .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('../../elements/single-product'),
+                 require('../../elements/single-product-automated'),
                
             ),
         cx.dropzone
@@ -25,6 +27,7 @@ module.exports = cx.contentElement
             .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('../../elements/single-product'),
+                 require('../../elements/single-product-automated'),
                
             ),
         cx.dropzone
@@ -32,12 +35,12 @@ module.exports = cx.contentElement
             .withMaxAllowedElements(1)
             .withAllowedElements(
                 require('../../elements/single-product'),
-               
+                require('../../elements/single-product-automated'),
             ),
         cx.dropzone
             .withDropzone('nl-spalten-double-card')
             .withAllowedElements(
-             
-                require('../../elements/double-card')
+              require('../../elements/double-card-auto'),
+              require('../../elements/double-card')
             )
     );

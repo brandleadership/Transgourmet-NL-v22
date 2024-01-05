@@ -1,29 +1,29 @@
-<div data-bsi-element="footer-links"
-    style="text-decoration-color: #e20026;color:#e20026 !important;">
-    <p style="font-size: 12px;text-decoration-color: #e20026;color:#e20026 !important;">
-        <a data-bsi-element-part="link"
-            class="footer-links"
-            style="font-size: 12px;text-decoration-color: #e20026;color:#e20026 !important;"
-            href="{{ properties.trans.links.impressum }}">
-            {{ properties.trans.impressum }}
-        </a> &nbsp;&#183;&nbsp;
-        <a data-bsi-element-part="link"
-            class="footer-links"
-            style="font-size: 12px;text-decoration-color: #e20026;color:#e20026 !important;"
-            href="{{ properties.trans.links.datenschutz }}">
-            {{ properties.trans.datenschutz }}
-        </a> &#160;&#183;&#160;
-        <a data-bsi-element-part="link"
-            class="footer-links"
-            style="font-size: 12px;text-decoration-color: #e20026;color:#e20026 !important;"
-            href="{{ properties.trans.links.einstellungen_aktualisieren }}">
-            {{ properties.trans.einstellungen_aktualisiren }}
-        </a> &#160;&#183;&#160;
-        <a data-bsi-element-part="link"
-            class="footer-links"
-            style="font-size: 12px;text-decoration-color: #e20026;color:#e20026 !important;"
-            href="{{ properties.trans.links.abmelden }}">
-            {{ properties.trans.abmelden }}
-        </a>
-    </p>
+<div data-bsi-element="footer-links"  style="text-decoration-color: #e20026;color:#e20026 !important;">
+ 
+<table  align="left"
+            bgcolor="#f4f4f4"
+            cellpadding="0"
+            cellspacing="0"
+            width="68%"
+        class="mobile-full-width"
+       
+   >
+    <tbody>
+    <tr>
+    <td data-bsi-dropzone="impressum"  class="links-full-mob" style="font-size: 12px;text-decoration-color: #e20026;color:#e20026 !important;padding-bottom: 10px;">
+    {% include "../links/impressum-link/template.twig" %}
+       </td> 
+         <td data-bsi-dropzone="datenschutz"  class="links-full-mob" style="padding-left:3px;padding-bottom: 10px;font-size: 12px;text-decoration-color: #e20026;color:#e20026 !important;padding-bottom: 10px;">
+          {% include "../links/datenschutz-link/template.twig" %}
+       </td>
+         <td data-bsi-dropzone="einstellungen"  class="links-full-mob" style="padding-left:3px;padding-bottom: 10px;font-size: 12px;text-decoration-color: #e20026;color:#e20026 !important;padding-bottom: 10px;">
+          {% include "../links/einstellungen-link/template.twig" %}
+        </td>
+         <td data-bsi-dropzone="abmelden"  class="links-full-mob" style="padding-bottom: 10px;font-size: 12px;text-decoration-color: #e20026;color:#e20026 !important;padding-bottom: 10px;">
+           {% include "../links/abmelden-link/template.twig" %}
+         </td>
+    </tr>
+    </tbody>
+</table>
+
 </div>

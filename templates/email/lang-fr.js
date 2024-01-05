@@ -27,7 +27,8 @@ module.exports = {
         preview: 'Actualités de Transgourmet/Prodega',
         lead_text: 'La Newsletter pour les clients de Prodega',
         links: {
-            aktionen_prodega: '[Aktionen|url=https://www.prodega.ch/actions]',
+            aktionen_prodega: '[Aktionen|url=https://www.transgourmet.ch/express]',
+            aktionen_bgh: '[Aktionen|url=https://www.transgourmet.ch/lastminute]',
             aktionen_tg: '[Aktionen|url=https://www.transgourmet.ch/actions]',
             maerkte:
                 '[Märkte|url=https://www.prodega.ch/fr/enlevement/marches]',

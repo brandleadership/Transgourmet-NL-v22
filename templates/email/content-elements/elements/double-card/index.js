@@ -2,7 +2,7 @@ const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
     .withElementId('double-card')
-    .withLabel('Double Card Produkt')
+    .withLabel('Double Card Produkt Man.')
     .withDescription('For use in Product Dynamic')
     .withIcon(Icon.TEXT_WITH_IMAGE)
     .withFile(require('./template.twig'))

@@ -1,15 +1,16 @@
-<div data-bsi-element="header-prodega" style="border-width: 0px !important;max-width: 740px;margin:auto">
+<div data-bsi-element="header-prodega" style="border-width: 0px !important;">
     <table 
         border="0"
         cellpadding="0"
         cellspacing="0"
          align="center"
         width="740"
-        bgcolor="#f4f4f4" class="mobile-full-width">
+        bgcolor="#f4f4f4" 
+        class="mobile-full-width">
         <tbody>
             <tr>
-                <td class="padding-mobile">
-                    <table bgcolor="#f4f4f4"
+                <td width="540" class="padding-mobile mobile-full-width">
+                    <table 
                         align="center"
                         border="0"
                         cellpadding="0"
@@ -26,7 +27,7 @@
                             <tr>
                                 <td valign="top"
                                    class="mobile-full-width"
-                                    width="540">
+                                    width="100%">
                                     <table align="center"
                                         border="0"
                                         cellpadding="0"
@@ -35,39 +36,26 @@
                                         width="100%">
                                         <tbody>
                                             <tr>
-                                                <td width="100%" class="mobile-full-width"
-                                                    >
-                                                    <table align="left"
-                                                        border="0"
-                                                        cellpadding="0"
-                                                        cellspacing="0"
-                                                        width="100%" class="mobile-full-width">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td style="border-width: 0px !important;margin-top: 0px!important;margin-bottom: 0px !important;"
-                                                                    width="60%"
+                                            <td style="text-align:left;border-width: 0px !important;margin-top: 0px!important;margin-bottom: 0px !important;"
+                                                                    width="50%"
                                                                     align="left"
                                                                     valign="middle"
                                                                     height="45"
-                                                                    data-bsi-dropzone="logo-2">
+                                                                    data-bsi-dropzone="logo-2"   class="mobile-full-width">
                                                                     {% block logo_2 %}
                                                                         {% include '../../elements/nl-header-logo/template.twig' %}
                                                                     {% endblock %}
                                                                 </td>
-                                                                <td style="border-width: 0px !important;margin-top: 0px!important;margin-bottom: 0px !important;"
+                                                                <td style="text-align:right;border-width: 0px !important;margin-top: 0px!important;margin-bottom: 0px !important;"
                                                                     valign="middle"
-                                                                    width="40%"
+                                                                    width="50%"
                                                                     align="right"
                                                                     height="45"
-                                                                    data-bsi-dropzone="preheader-2">
+                                                                    data-bsi-dropzone="preheader-2"   class="mobile-full-width">
                                                                     {% block preheader_2 %}
                                                                         {% include '../../elements/nl-preheader/template.twig' %}
                                                                     {% endblock %}
                                                                 </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -86,3 +74,6 @@
         </tbody>
     </table>
 </div>
+
+
+

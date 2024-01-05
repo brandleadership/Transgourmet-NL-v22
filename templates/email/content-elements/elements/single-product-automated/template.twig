@@ -10,7 +10,7 @@
    width="100%"  data-bsi-element="{{ element }}"
    >
    <tr>
-      <td height="353" bgcolor="#ffffff" style="border: 1px solid #e5e5e5;height:353px;">
+      <td height="353" bgcolor="#ffffff" style="height:353px;">
          <table align="left"
             bgcolor="#ffffff"
             cellpadding="0"
@@ -18,8 +18,6 @@
             width="100%"
             class="mobile-full-width"
             >
-            {% for index, element in order %}
-            {% if element == 'image' %}
             <tr>
                <td colspan="3"
                   align="center"
@@ -28,7 +26,7 @@
                   >
                   <a href="[product_image]"
                      target="_blank"
-                     style="outline: none;color: #000; border: 0px;" class="product-link-auto"  data-bsi-element-part="image">
+                     style="outline: none;color: #000; border: 0px;" class="product-link"  data-bsi-element-part="image">
                   <img alt="BSI"
                      border="0"
                      width="160"
@@ -41,7 +39,7 @@
                      '../../../../../resources/whitelabel/product-list-item1.png'
                      )
                      }}"
-                     class="product-image-auto"
+                     class="product-image"
                      style="display: block; width: 160px;max-width:160px; height: auto;margin-bottom: 20px;margin-top:20px;" />
                   </a>
                </td>
@@ -68,6 +66,7 @@
                               </a>
                            </td>
                         </tr>
+                        <tr><td height="8" style="height: 8px;"></td></tr>
                         <tr>
                            <td align="left"
                               style="padding-bottom:20px;padding-left: 24px;">
@@ -118,7 +117,7 @@
                                  </tbody>
                               </table>
                            </td>
-                           <td valign="middle" align="right" style="vertical-align:middle;padding-right:24px;padding-bottom:20px;cursor:pointer;">
+                           {# <td valign="middle" align="right" style="vertical-align:middle;padding-right:24px;padding-bottom:20px;cursor:pointer;">
                               <a href="#" class="arrow-button-link-auto" style="mso-line-height-rule: exactly;line-height:0;"> 
                               <img 
                                  width="56"
@@ -132,15 +131,14 @@
                                  }}"
                                  style="display: block; width: 56px;line-height:0;"
                                  /></a>
-                           </td>
+                           </td> #}
                          
                         </tr>
                      </tbody>
                   </table>
                </td>
             </tr>
-            {% endif %}
-            {% endfor %} 
+         
          </table>
       </td>
    </tr>

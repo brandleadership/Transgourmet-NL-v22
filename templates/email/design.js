@@ -49,6 +49,7 @@ module.exports = cx.design
             .withContentElements(
                 require('./content-elements/sections/nl-spalten'),
                 require('./content-elements/sections/nl-spalten-auto'),
+                 require('./content-elements/sections/nl-spalten-combined'),
                 require('./content-elements/sections/brochure'),
                 require('./content-elements/sections/crossteaser')
             ),
@@ -56,14 +57,17 @@ module.exports = cx.design
             .withGroupId('footer')
             .withLabel('Footer Elemente')
             .withContentElements(
-                require('./content-elements/sections/footer-beliefern'),
                 require('./content-elements/sections/footer-abholen'),
                 require('./content-elements/elements/footer-address'),
                 require('./content-elements/elements/footer-links'),
                 require('./content-elements/elements/footer-social-follow'),
                 require('./content-elements/elements/footer-text'),
                 require('./content-elements/elements/footer-agh-links'),
-                require('./content-elements/elements/footer-bgh-links')
+                require('./content-elements/elements/footer-bgh-links'),
+                require('./content-elements/elements/links/abmelden-link'),
+                require('./content-elements/elements/links/datenschutz-link'),
+                require('./content-elements/elements/links/einstellungen-link'),
+                require('./content-elements/elements/links/impressum-link'),
             ),
         cx.contentElementGroup
             .withGroupId('diverses')
@@ -92,6 +96,7 @@ module.exports = cx.design
             require('./content-elements/sections/intro'),
             require('./content-elements/sections/nl-spalten'),
             require('./content-elements/sections/nl-spalten-auto'),
+            require('./content-elements/sections/nl-spalten-combined'),
             require('./content-elements/elements/nl-bild'),
             require('./content-elements/sections/text-mit-bild'),
             require('./content-elements/elements/nl-brochure-3-bild-row'),
@@ -105,7 +110,7 @@ module.exports = cx.design
             .withDropzone('footer')
             .withMaxAllowedElements(1)
             .withAllowedElements(
-                require('./content-elements/sections/footer-beliefern'),
+              
                 require('./content-elements/sections/footer-abholen')
             )
     );
