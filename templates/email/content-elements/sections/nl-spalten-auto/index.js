@@ -39,5 +39,17 @@ module.exports = cx.contentElement
             .withAllowedElements(
               
                 require('../../elements/double-card-auto')
+            ),
+          cx.dropzone
+            .withDropzone('nl-spalten-double-card-auto-2')
+            .withAllowedElements(
+              require('../../elements/double-card-auto'),
+          
+        ),
+          cx.dropzone
+            .withDropzone('nl-spalten-double-card-auto-3')
+            .withAllowedElements(
+              require('../../elements/double-card-auto'),
+         
             )
     );

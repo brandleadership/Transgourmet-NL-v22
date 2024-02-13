@@ -12,7 +12,7 @@ const emailBuildConfig = new BuildConfig()
     .withName('Transgourmet Email')
     .withVersion('2.0.0')
     .withDesignType(DesignType.EMAIL)
-    .withTargetVersion(Version.CX_1_3)
+    .withTargetVersion(Version.CX_22_0)
     .withRootPath(path.resolve(__dirname, 'templates', 'email'))
     .withPropertiesFilePath('properties.js')
     .withAdditionalFilesToCopy(

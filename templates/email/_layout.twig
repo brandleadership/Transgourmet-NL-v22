@@ -40,29 +40,37 @@
 }
 
 .formatted-text-color a {
-      color: #e20026 !important;
-      text-decoration: none !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
+    display: inline !important;
+    color: #e20026 !important;
+
 }
 @media (max-width: 740px) {
     .mobile-full-width {
         width: 100% !important;
     }
+
+    .formatted-text-color a {
+    display: inline !important;
+    color: #e20026 !important;
+   
+}
+    .formatted-text-color a span{
+    display: inline !important;
+    color: #e20026 !important;
+   
+}
     .mobile-full-width-table {
         width: 100% !important;
         display: table !important;
     }
 
     .mobile-title h1 {
-        font-size: 32px !important;
+        font-size: 1.8rem !important;
         word-break: normal;
     }
     .mobile-text {
-        font-size: 18px !important;
-        word-break: normal;
+        font-size: 1rem !important;
+        word-break: none;
     }
     .mobile-space {
         height: 48px !important;
@@ -114,9 +122,7 @@
     }
 
     
-  .hidden-link {
-        display: none !important;
-    }
+ 
 }
 </style>
 

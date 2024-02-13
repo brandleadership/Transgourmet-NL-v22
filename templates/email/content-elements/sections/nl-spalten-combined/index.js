@@ -38,7 +38,19 @@ module.exports = cx.contentElement
                 require('../../elements/single-product-automated'),
             ),
         cx.dropzone
-            .withDropzone('nl-spalten-double-card')
+            .withDropzone('nl-spalten-double-card-comb')
+            .withAllowedElements(
+              require('../../elements/double-card-auto'),
+              require('../../elements/double-card')
+        ),
+          cx.dropzone
+            .withDropzone('nl-spalten-double-card-comb-2')
+            .withAllowedElements(
+              require('../../elements/double-card-auto'),
+              require('../../elements/double-card')
+        ),
+          cx.dropzone
+            .withDropzone('nl-spalten-double-card-comb-3')
             .withAllowedElements(
               require('../../elements/double-card-auto'),
               require('../../elements/double-card')
