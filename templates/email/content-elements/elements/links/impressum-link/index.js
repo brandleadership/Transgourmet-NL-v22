@@ -5,3 +5,6 @@ module.exports = cx.contentElement
     .withLabel('Impressum')
     .withIcon(Icon.TEXT)
     .withFile(require('./template.twig'))
+    .withParts(
+        cx.part.link.withLabel('Impressum'),
+)

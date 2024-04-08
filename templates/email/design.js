@@ -47,8 +47,8 @@ module.exports = cx.design
             .withGroupId('produkte-promotionen')
             .withLabel('Produkte und Promotionen')
             .withContentElements(
-                require('./content-elements/sections/nl-spalten'),
-                require('./content-elements/sections/nl-spalten-auto'),
+                // require('./content-elements/sections/nl-spalten'),
+                // require('./content-elements/sections/nl-spalten-auto'),
                  require('./content-elements/sections/nl-spalten-combined'),
                 require('./content-elements/sections/brochure'),
                 require('./content-elements/sections/crossteaser')

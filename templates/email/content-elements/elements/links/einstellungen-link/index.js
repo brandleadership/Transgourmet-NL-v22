@@ -5,3 +5,7 @@ module.exports = cx.contentElement
     .withLabel('Einstellungen aktualisieren')
     .withIcon(Icon.TEXT)
     .withFile(require('./template.twig'))
+    .withParts(
+        cx.part.link.withLabel('Einstellungen aktualisieren'),
+      
+)
