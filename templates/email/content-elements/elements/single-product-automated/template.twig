@@ -6,7 +6,7 @@
 {% endif %}
 {% set padding = ['0 8px 20px 0px', '0 0px 20px 8px'] %}
 <table   border="0"   cellpadding="0"
-   cellspacing="0" class=" mobile-full-width product-card-automated"
+   cellspacing="0" class="mobile-full-width product-card-automated"
    width="100%"  data-bsi-element="{{ element }}"
    >
    <tr><td width="100%" height="20"></td></tr>
@@ -25,11 +25,10 @@
                   align="center"
                   valign="top"
                   bgcolor="#ffffff"
-                  class="padding-top: 20px;padding-bottom: 20px;"
                   >
                   <a href="[product_image]"
                      target="_blank"
-                     style="outline: none;color: #000; border: 0px;" class="product-link"  data-bsi-element-part="image">
+                     style="cursor:pointer;outline: none;color: #000; border: 0px;" class="product-link"  data-bsi-element-part="image">
                   <img alt="BSI"
                      border="0"
                      width="160"
@@ -58,12 +57,12 @@
                      <tbody>
                         <tr>
                            <td align="left"
-                              style="padding-top:20px;padding-left: 24px;font-weight:bold;">
-                              <a 
-                                 style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal; color: #000000; font-size: 16px;line-height:20px;margin: 0;outline: none;text-decoration: none;"
-                                 href="{{ company.website }}{{ trackingLinkSuffix }}"
+                              style="padding-top:20px;padding-left: 24px;padding-right:24px;font-weight:bold;">
+                              <a  data-bsi-element-part="link"
+                                 style="cursor:pointer;font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:700; font-style:normal; color: #000000; font-size: 16px;line-height:20px;margin: 0;outline: none;text-decoration: none;"
+                                 href="[product_name]"
                                  target="_blank"
-                               data-bsi-element-part="plain-text">
+                              >
                               {name}
                               </a>
                            </td>
@@ -71,7 +70,7 @@
                         <tr><td height="8" style="height: 8px;"></td></tr>
                         <tr>
                            <td align="left"
-                              style="padding-bottom:20px;padding-left: 24px;">
+                              style="padding-bottom:20px;padding-left: 24px;padding-right:24px;">
                               <div data-bsi-element-part="plain-text"
                                  style="font-family: 'Transgourmet','Trebuchet MS','sans-serif';font-weight:400; font-style:normal; color: #000000; font-size: 14px;line-height:16px;margin: 0;">
                                  {description}
@@ -119,21 +118,7 @@
                                  </tbody>
                               </table>
                            </td>
-                           {# <td valign="middle" align="right" style="vertical-align:middle;padding-right:24px;padding-bottom:20px;cursor:pointer;">
-                              <a href="#" class="arrow-button-link-auto" style="mso-line-height-rule: exactly;line-height:0;"> 
-                              <img 
-                                 width="56"
-                                 height="56"
-                                 src="{{
-                                 src
-                                 ?
-                                 : bsi_cx_asset(
-                                 '../../../../../resources/whitelabel/QTY.png'
-                                 )
-                                 }}"
-                                 style="display: block; width: 56px;line-height:0;"
-                                 /></a>
-                           </td> #}
+                       
                          
                         </tr>
                      </tbody>

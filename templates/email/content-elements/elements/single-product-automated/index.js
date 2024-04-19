@@ -7,7 +7,7 @@ module.exports = cx.contentElement
     .withFile(require('./template.twig'))
     .withParts(
         cx.part.image.withLabel('Product Image'),
-        cx.part.plainText.withLabel('Quality'),
+        cx.part.link.withLabel('Name'),
         cx.part.plainText.withLabel('Description'),
         cx.part.plainText.withLabel('Iso'),
         cx.part.plainText.withLabel('Price'),

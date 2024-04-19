@@ -20,7 +20,7 @@ module.exports = {
         newsletterverwalten: 'Gestione della newsletter',
         unsubscribe: '​Annullare la newsletter',
         footertext:
-            'Si prega di tener conto dei diversi periodi di validità delle azioni nelle pubblicazioni corrispondenti. Si riservano cambiamenti di prezzo e limitazioni di quantità. Tutte le offerte sono IVA esclusa e TRA inclusa. In alcuni mercati certi articoli sono disponibili solo su ordinazione.',
+            'Vi preghiamo di tenere conto della durata della promozione delle rispettive pubblicazioni. Si riservano cambiamenti di prezzo e limitazioni di quantità. Tutte le offerte sono IVA esclusa e TRA inclusa. In alcuni mercati certi articoli sono disponibili solo su ordinazione.',
         brochuretitle: 'Promozioni e molto altro ancora',
         followus: 'Seguiteci sui Social Media!',
         anzeige: 'Pubblicità',

@@ -20,7 +20,7 @@ module.exports = {
         newsletterverwalten: 'Gérer les newsletters',
         unsubscribe: 'Me désinscrire d`une newsletter',
         footertext:
-            'Veuillez tenir compte des différentes durées de validité des actions dans les publications correspondantes.<br/>Sous réserve de modification des prix et de limitation des quantités. Toutes les offres TVA exclue et TEA incluse. Dans certains marchés, quelques articles sont disponibles uniquement sur commande.',
+            'Veuillez tenir compte des différentes durées de validité des actions dans les publications correspondantes. Sous réserve de modification des prix et de limitation des quantités. Toutes les offres TVA exclue et TEA incluse. Dans certains marchés, quelques articles sont disponibles uniquement sur commande.',
         brochuretitle: 'Des actions et plus encore',
         followus: 'Suivez-nous sur les médias sociaux',
         anzeige: 'Publicité',
