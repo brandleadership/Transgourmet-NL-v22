@@ -20,7 +20,7 @@ module.exports = {
         newsletterverwalten: 'Newsletter verwalten',
         unsubscribe: 'Newsletter abbestellen',
         footertext:
-            'Bitte beachten Sie die Aktionsdauer der jeweiligen Publikationen.Preisänderungen und Mengenbeschränkungen vorbehalten. Alle Angebote exklusive MwSt und inklusive VRG. Gewisse Artikel in einzelnen Märkten nur auf Bestellung.',
+            'Bitte beachten Sie die Aktionsdauer der jeweiligen Publikationen. Preisänderungen und Mengenbeschränkungen vorbehalten. Alle Angebote exklusive MwSt und inklusive VRG. Gewisse Artikel in einzelnen Märkten nur auf Bestellung.',
         brochuretitle: 'Aktionen und mehr',
         followus: 'Folgen Sie uns auf Social Media!',
         anzeige: 'Anzeige',
