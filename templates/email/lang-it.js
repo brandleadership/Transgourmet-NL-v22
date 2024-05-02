@@ -3,7 +3,7 @@ const baseProperties = require('./properties');
 module.exports = {
     ...baseProperties,
     trans: {
-        product_list_title: 'Consigliato per te',
+        product_list_title: 'Consigliato su misura',
         crossteaser: 'Cruciverba',
         aktionen: 'Promozioni',
         maerkte: 'Mercati',
@@ -20,14 +20,15 @@ module.exports = {
         newsletterverwalten: 'Gestione della newsletter',
         unsubscribe: '​Annullare la newsletter',
         footertext:
-            'Si prega di tener conto dei diversi periodi di validità delle azioni nelle pubblicazioni corrispondenti. Si riservano cambiamenti di prezzo e limitazioni di quantità. Tutte le offerte sono IVA esclusa e TRA inclusa. In alcuni mercati certi articoli sono disponibili solo su ordinazione.',
+            'Vi preghiamo di tenere conto della durata della promozione delle rispettive pubblicazioni. Si riservano cambiamenti di prezzo e limitazioni di quantità. Tutte le offerte sono IVA esclusa e TRA inclusa. In alcuni mercati certi articoli sono disponibili solo su ordinazione.',
         brochuretitle: 'Promozioni e molto altro ancora',
         followus: 'Seguiteci sui Social Media!',
         anzeige: 'Pubblicità',
-        preview: 'Novità da Transgourmet/Prodega',
+        preview: 'Attualità di Transgourmet/Prodega',
+        lead_text: 'La Newsletter per clienti Prodega ',
         links: {
-            aktionen_prodega:
-                '[Aktionen|url=https://www.prodega.ch/it/ritirare/promozioni]',
+             aktionen_prodega: '[Aktionen|url=https://www.transgourmet.ch/express]',
+            aktionen_bgh: '[Aktionen|url=https://www.transgourmet.ch/lastminute]',
             aktionen_tg:
                 '[Aktionen|url=https://www.transgourmet.ch/it/ritirare/promozioni]',
             maerkte: '[Märkte|url=https://www.prodega.ch/it/ritirare/mercati]',

@@ -3,7 +3,7 @@ const baseProperties = require('./properties');
 module.exports = {
     ...baseProperties,
     trans: {
-        product_list_title: 'Pour vous recommander',
+        product_list_title: 'Recommandé pour vous',
         crossteaser: 'Mots croisés',
         aktionen: 'Actions',
         maerkte: 'Marchés',
@@ -20,13 +20,15 @@ module.exports = {
         newsletterverwalten: 'Gérer les newsletters',
         unsubscribe: 'Me désinscrire d`une newsletter',
         footertext:
-            'Veuillez tenir compte des différentes durées de validité des actions dans les publications correspondantes.<br/>Sous réserve de modification des prix et de limitation des quantités. Toutes les offres TVA exclue et TEA incluse. Dans certains marchés, quelques articles sont disponibles uniquement sur commande.',
+            'Veuillez tenir compte des différentes durées de validité des actions dans les publications correspondantes. Sous réserve de modification des prix et de limitation des quantités. Toutes les offres TVA exclue et TEA incluse. Dans certains marchés, quelques articles sont disponibles uniquement sur commande.',
         brochuretitle: 'Des actions et plus encore',
         followus: 'Suivez-nous sur les médias sociaux',
         anzeige: 'Publicité',
         preview: 'Actualités de Transgourmet/Prodega',
+        lead_text: 'La Newsletter pour les clients de Prodega',
         links: {
-            aktionen_prodega: '[Aktionen|url=https://www.prodega.ch/actions]',
+            aktionen_prodega: '[Aktionen|url=https://www.transgourmet.ch/express]',
+            aktionen_bgh: '[Aktionen|url=https://www.transgourmet.ch/lastminute]',
             aktionen_tg: '[Aktionen|url=https://www.transgourmet.ch/actions]',
             maerkte:
                 '[Märkte|url=https://www.prodega.ch/fr/enlevement/marches]',

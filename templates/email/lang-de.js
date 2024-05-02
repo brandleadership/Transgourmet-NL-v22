@@ -20,13 +20,16 @@ module.exports = {
         newsletterverwalten: 'Newsletter verwalten',
         unsubscribe: 'Newsletter abbestellen',
         footertext:
-            'Bitte beachten Sie die Aktionsdauer der jeweiligen Publikationen.Preisänderungen und Mengenbeschränkungen vorbehalten. Alle Angebote exklusive MwSt und inklusive VRG. Gewisse Artikel in einzelnen Märkten nur auf Bestellung.',
+            'Bitte beachten Sie die Aktionsdauer der jeweiligen Publikationen. Preisänderungen und Mengenbeschränkungen vorbehalten. Alle Angebote exklusive MwSt und inklusive VRG. Gewisse Artikel in einzelnen Märkten nur auf Bestellung.',
         brochuretitle: 'Aktionen und mehr',
         followus: 'Folgen Sie uns auf Social Media!',
         anzeige: 'Anzeige',
         preview: 'Aktuelles von der Transgourmet/Prodega',
+        lead_text: 'Der Newsletter für Prodega-Kunden',
+        product_titel: '',
         links: {
-            aktionen_prodega: '[Aktionen|url=https://www.prodega.ch/aktionen]',
+            aktionen_prodega: '[Aktionen|url=https://www.transgourmet.ch/express]',
+            aktionen_bgh: '[Aktionen|url=https://www.transgourmet.ch/lastminute]',
             aktionen_tg: '[Aktionen|url=https://www.transgourmet.ch/aktionen]',
             maerkte: '[Märkte|url=https://www.prodega.ch/meinmarkt]',
             verkaufsberater:

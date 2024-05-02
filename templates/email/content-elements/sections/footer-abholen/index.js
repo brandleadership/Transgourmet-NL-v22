@@ -1,9 +1,8 @@
 const { cx, Icon } = require('@bsi-cx/design-build');
 
 module.exports = cx.contentElement
-    .withElementId('footer-abholen')
+    .withElementId('footer')
     .withLabel('Footer - Container')
-    .withDescription('Abholen')
     .withIcon(Icon.TEXT)
     .withFile(require('./template.twig'))
     .withDropzones(
