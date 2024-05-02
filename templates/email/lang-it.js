@@ -3,7 +3,7 @@ const baseProperties = require('./properties');
 module.exports = {
     ...baseProperties,
     trans: {
-        product_list_title: 'Consigliato per te (Carte prodotto)',
+        product_list_title: 'Consigliato per te',
         crossteaser: 'Cruciverba',
         aktionen: 'Promozioni',
         maerkte: 'Mercati',
@@ -24,6 +24,7 @@ module.exports = {
         brochuretitle: 'Promozioni e molto altro ancora',
         followus: 'Seguiteci sui Social Media!',
         anzeige: 'Pubblicità',
+        preview: 'Novità da Transgourmet/Prodega',
         links: {
             aktionen_prodega:
                 '[Aktionen|url=https://www.prodega.ch/it/ritirare/promozioni]',
@@ -38,7 +39,7 @@ module.exports = {
                 '[Impressum|url= https://www.transgourmet.ch/it/impressum]',
             datenschutz:
                 '[Datenschutz|url=https://www.transgourmet.ch/it/co/protezione-dei-dati]',
-            einstellungen_aktualisieren: '[Einstellungen aktualisieren]',
+            einstellungen_aktualisieren: '[Einstellungen]',
             abmelden: '[Abmelden]',
             agb: '[AGB|url=https://www.transgourmet.ch/it/aziendale/cgc]',
             apple:
